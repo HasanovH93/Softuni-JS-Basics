@@ -4,8 +4,7 @@ function aluminiumShop(input) {
   let shipMethod = input[2];
 
   let aluPrice = 0;
- 
-  
+
   if (aluType == "90X130") {
     aluPrice = 110 * aluCount;
     if (aluCount > 30 && aluCount < 60) {
@@ -34,27 +33,25 @@ function aluminiumShop(input) {
     } else if (aluCount > 50) {
       aluPrice = aluPrice - aluPrice * 0.12;
     }
-  }else if (aluType == "200X300") {
+  } else if (aluType == "200X300") {
     aluPrice = 250 * aluCount;
     if (aluCount > 20 && aluCount < 50) {
       aluPrice = aluPrice - aluPrice * 0.09;
     } else if (aluCount > 50) {
       aluPrice = aluPrice - aluPrice * 0.14;
     }
-  } if(shipMethod == "With delivery") {
-      aluPrice = aluPrice + 60
-  } if(aluCount > 99) {
-      aluPrice = aluPrice - aluPrice * 0.04
-  }if(aluCount < 10) {
-    console.log("Invalid order")
-
-}else {
-    console.log(`${aluPrice.toFixed(2)} BGN`)
+  }
+  if (shipMethod == "With delivery") {
+    aluPrice = aluPrice + 60;
+  }
+  if (aluCount > 99) {
+    aluPrice = aluPrice - aluPrice * 0.04;
+  }
+  if (aluCount < 10) {
+    console.log("Invalid order");
+  } else {
+    console.log(`${aluPrice.toFixed(2)} BGN`);
+  }
 }
-
- 
-}
-
-
 
 aluminiumShop(["2", "130X180", "With delivery"]);
