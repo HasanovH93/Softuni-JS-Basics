@@ -1,4 +1,0 @@
-function days(input){
-    s
-
-}
