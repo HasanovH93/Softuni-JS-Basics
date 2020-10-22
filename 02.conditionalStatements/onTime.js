@@ -22,7 +22,7 @@ function onTimeForExam(input) {
     } else {
       console.log(`${time} minutes after the start`);
     }
-  } else if ( time <= 30) {
+  } else if (time <= 30) {
     console.log("On time");
 
     if (time !== 0) {
