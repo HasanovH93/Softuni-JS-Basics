@@ -18,24 +18,21 @@ function holidayTrip(input) {
   } else if (budget <= 1000) {
     country = "Balkans";
     if (season == "summer") {
-        placeToStay = "Camp"
-        price = budget * 0.4
-    }else if (season == "winter") {
-        placeToStay = "Hotel"
-        price = budget * 0.8
+      placeToStay = "Camp";
+      price = budget * 0.4;
+    } else if (season == "winter") {
+      placeToStay = "Hotel";
+      price = budget * 0.8;
     }
-  }else if (budget > 1000){
-      country = "Europe"
-      
-        placeToStay = "Hotel"
-        price = budget * 0.9
-      
-      
+  } else if (budget > 1000) {
+    country = "Europe";
 
+    placeToStay = "Hotel";
+    price = budget * 0.9;
   }
 
-  console.log(`Somewhere in ${country}`)
-  console.log(`${placeToStay} - ${price.toFixed(2)}`)
+  console.log(`Somewhere in ${country}`);
+  console.log(`${placeToStay} - ${price.toFixed(2)}`);
 }
 
-holidayTrip(["678.53", "winter"])
+holidayTrip(["678.53", "winter"]);
