@@ -1,14 +1,13 @@
-function sumNumbers(input){
+function sumNumbers(input) {
+  let numText = "" + input[0];
 
-    let numText =  "" + input[0]
+  let sum = 0;
+  for (let i = 0; i < numText.length; i++) {
+    let n = Number(numText.charAt(i));
 
-    let sum = 0;
-    for(let i = 0; i < numText.length; i++){
-        let n = Number(numText.charAt(i))
-      
-        sum += n
-    }
-    console.log(`The sum of the digits is:${sum}`)
+    sum += n;
+  }
+  console.log(`The sum of the digits is:${sum}`);
 }
 
-sumNumbers(['1234'])
+sumNumbers(["1234"]);
