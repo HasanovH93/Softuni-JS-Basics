@@ -12,4 +12,4 @@ function divisibleBy9(input) {
   console.log(`The sum: ${result}`);
   console.log(printNumber);
 }
-divisibleBy9([100, 200])
+divisibleBy9([100, 200]);
