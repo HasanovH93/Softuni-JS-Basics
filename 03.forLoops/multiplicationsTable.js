@@ -1,14 +1,11 @@
-function multiPlicationsTable(input){
+function multiPlicationsTable(input) {
+  let num = Number(input[0]);
 
-    let num = Number(input[0])
+  for (i = 1; i <= 10; i++) {
+    let result = i * num;
 
-
-    for(i = 1; i<= 10;i++){
-      
-        let result = i * num
-      
-        console.log(`${i} * ${num} = ${result}`)
-    }
+    console.log(`${i} * ${num} = ${result}`);
+  }
 }
 
-multiPlicationsTable([5])
+multiPlicationsTable([5]);
