@@ -7,7 +7,7 @@ function salary(input) {
     let currentTab = input[i];
     switch (currentTab) {
       case "Facebook":
-        salary-= 150;
+        salary -= 150;
 
         break;
       case "Instagram":
@@ -20,21 +20,14 @@ function salary(input) {
       default:
         break;
     }
-    if(salary <= 0){
-        console.log('You have lost your salary.');
-        break;
+    if (salary <= 0) {
+      console.log("You have lost your salary.");
+      break;
     }
   }
-  if(salary > 0){
-      console.log(salary)
-
+  if (salary > 0) {
+    console.log(salary);
   }
 }
 
-salary(["3",
-"500",
-"Github.com",
-"Stackoverflow.com",
-"softuni.bg"])
-
-
+salary(["3", "500", "Github.com", "Stackoverflow.com", "softuni.bg"]);
