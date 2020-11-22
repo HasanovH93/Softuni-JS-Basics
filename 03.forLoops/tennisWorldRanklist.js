@@ -10,7 +10,7 @@ function worldRanklist(input) {
     switch (tourStage) {
       case "W":
         points += 2000;
-        wins++
+        wins++;
         break;
       case "F":
         points += 1200;
@@ -23,14 +23,14 @@ function worldRanklist(input) {
         break;
     }
   }
-  
-  let average = (points - startPoints) / countTournamets;
-  
-  console.log(`Final points: ${points}`)
-  console.log(`Average points: ${Math.floor(average)}`)
 
-  let percentWins = wins / countTournamets * 100;
-  console.log(`${percentWins.toFixed(2)}%`)
+  let average = (points - startPoints) / countTournamets;
+
+  console.log(`Final points: ${points}`);
+  console.log(`Average points: ${Math.floor(average)}`);
+
+  let percentWins = (wins / countTournamets) * 100;
+  console.log(`${percentWins.toFixed(2)}%`);
 }
 
 worldRanklist(["5", "1400", "F", "SF", "W", "W", "SF"]);
