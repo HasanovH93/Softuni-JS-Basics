@@ -24,5 +24,4 @@ function compare(input) {
   }
 }
 
-compare(["tomatoo"])
-
+compare(["tomatoo"]);
