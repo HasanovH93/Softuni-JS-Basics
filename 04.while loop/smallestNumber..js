@@ -1,25 +1,18 @@
-function smallestNumber(input){
+function smallestNumber(input) {
+  let index = 0;
+  let command = input[index++];
 
-    let index = 0;
-    let command = input[index++];
+  let minNumber = Number.MAX_SAFE_INTEGER;
 
-    let minNumber = Number.MAX_SAFE_INTEGER;
+  while (command !== "Stop") {
+    let num = Number(command);
 
-    while(command !== "Stop"){
-      
-        let num = Number(command);
-
-        if(minNumber > num){
-            minNumber = num;
-        }
-     command = input[index++];
+    if (minNumber > num) {
+      minNumber = num;
     }
-    console.log(minNumber)
-
+    command = input[index++];
+  }
+  console.log(minNumber);
 }
 
-smallestNumber(["100",
-"99",
-"80",
-"70",
-"Stop"])
+smallestNumber(["100", "99", "80", "70", "Stop"]);
