@@ -1,9 +1,8 @@
 function multyplicationTable() {
-
-    for(x = 1; x <= 10; x++) {
-        for(y = 1; y <= 10; y++) {
-            console.log(`${x} * ${y} = ${x * y}`)
-        }
+  for (x = 1; x <= 10; x++) {
+    for (y = 1; y <= 10; y++) {
+      console.log(`${x} * ${y} = ${x * y}`);
     }
+  }
 }
-multyplicationTable()
+multyplicationTable();
