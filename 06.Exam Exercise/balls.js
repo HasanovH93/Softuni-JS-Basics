@@ -15,50 +15,50 @@ function balls(input) {
 
     switch (color) {
       case "red":
-        red++
+        red++;
         points += 5;
         break;
       case "orange":
-        orange++
+        orange++;
         points += 10;
         break;
       case "yellow":
-        yellow++
+        yellow++;
         points += 15;
         break;
       case "white":
-        white++
+        white++;
         points += 20;
         break;
       case "black":
-        black++
+        black++;
         points /= 2;
         break;
 
       default:
-          otherColors++
+        otherColors++;
         break;
     }
-    
   }
-  let totalPoints = Math.floor(points)
+  let totalPoints = Math.floor(points);
   console.log(`Total points: ${totalPoints}`);
   console.log(`Red balls: ${red}`);
   console.log(`Orange balls: ${orange}`);
   console.log(`Yellow balls: ${yellow}`);
-  console.log(`White balls: ${white}`)
+  console.log(`White balls: ${white}`);
   console.log(`Other colors picked: ${otherColors}`);
-  console.log(`Divides from black balls: ${black}`)
+  console.log(`Divides from black balls: ${black}`);
 }
-balls(["10",
-"white",
-"white",
-"ee",
-"red",
-"orange",
-"red",
-"black",
-"black",
-"black",
-"black",
-])
+balls([
+  "10",
+  "white",
+  "white",
+  "ee",
+  "red",
+  "orange",
+  "red",
+  "black",
+  "black",
+  "black",
+  "black",
+]);
