@@ -4,7 +4,7 @@ function bestPlayer(input) {
   let index = 0;
   let command = input[index++];
   let name = "";
-  let bestPlayer = '';
+  let bestPlayer = "";
   while (command !== "END") {
     name = command;
     let goals = Number(input[index++]);
@@ -12,7 +12,6 @@ function bestPlayer(input) {
     if (goals > goalsCounter) {
       goalsCounter = goals;
       bestPlayer = name;
-
     }
     if (goalsCounter >= 10) {
       break;
