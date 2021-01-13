@@ -1,42 +1,30 @@
 function openTime(input) {
-    let  time = Number(input[0])
-     let day = String(input[1])
-    
-   
+  let time = Number(input[0]);
+  let day = String(input[1]);
 
-     if(time >= 10 && time <= 18) {
-       switch (day) {
-        case "Monday":
+  if (time >= 10 && time <= 18) {
+    switch (day) {
+      case "Monday":
 
-            case "Tuesday":
-    
-            case "Wednesday":
-    
-            case "Thursday":
-    
-            case "Friday":
-            
-            case "Saturday":
-                console.log("open")
-               break;
-            case "Sunday":
-           default:
-               console.log("closed")
-               break;
-       }
-        
-    }else {
-        console.log("closed")
+      case "Tuesday":
+
+      case "Wednesday":
+
+      case "Thursday":
+
+      case "Friday":
+
+      case "Saturday":
+        console.log("open");
+        break;
+      case "Sunday":
+      default:
+        console.log("closed");
+        break;
     }
+  } else {
+    console.log("closed");
+  }
 }
 
-openTime([15,
-"Monday"])
-
-
-
-
-
-
-
-
+openTime([15, "Monday"]);
