@@ -28,6 +28,6 @@ function moviesPrice(input) {
     default:
       break;
   }
-  console.log(price)
+  console.log(price);
 }
-moviesPrice(["Sunday"])
+moviesPrice(["Sunday"]);
